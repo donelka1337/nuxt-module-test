@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Medium.ttf');
+  font-weight: 500;
+}
+
+html, input {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  padding: 0 24px 24px;
+  height: 100svh;
+  width: 100%;
+
+  &__header {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-standard;
+    position: relative;
+    left: -24px;
+    width: calc(100% + 24px * 2);
+    flex-shrink: 0;
+  }
+
+  &__title {
+    color: $text-primary;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    height: calc(100svh - 64px);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.scrollable-wrapper {
+  overflow-y: auto;
+  height: 100%;
+}
+
+// скролл для Opera и Chrome
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $border-standard;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+// скролл для FireFox
+* {
+  scrollbar-color: $border-standard transparent;
+  scrollbar-width: thin;
+}
+
+// стили скролла для меню
+.main-menu__list{
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: $bg-accent;
+  }
+  
+  scrollbar-color: $bg-accent transparent;
+}
+
+.company-switcher {
+  height: fit-content;
+  min-height: 40px;
+
+  &__icon {
+    color: $icon-gray !important;
+  }
+
+  &__content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    padding: 8px 0 !important;
+  }
+
+  &__company {
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__role {
+    line-height: 16px;
+    font-size: 12px;
+    color: $text-inactive;
+  }
+}
+
+.default-value {
+  color: $text-secondary;
+  font-size: 13px;
+}
+
+.notifications-badge {
+  .el-badge__content {
+    background-color: $text-accent  !important;
+    color: $white;
+    border: none;
+    font-style: normal;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 16px;
+    top: 2px;
+    right: 12px;
+  }
+}
+
+.button-cart-wrapper {
+  width: 36px;
+  height: 36px;
+
+  .button-cart {
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $interaction-tint-dark;
+    }
+    &__icon {
+      font-size: 16px;
+      color: $icon-secondary;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+  text-underline-position: under;
+}

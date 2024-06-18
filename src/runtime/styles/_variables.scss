@@ -1,0 +1,77 @@
+$black: #333;
+$white: #fff;
+$gray: #8a8894;
+
+$icon-gray: #A9AAAC;
+$icon-primary: #393D40;
+$icon-secondary: #637173;
+$icon-accent: #EB4C34;
+$icon-inactive: #A9AAAC;
+
+$text-primary: #272A2E;
+$text-secondary: #637173;
+$text-inactive: #ABAAAD;
+$text-negative: #DE2626;
+$text-accent: #EB4C34;
+
+$light-gray: #EBEDF0;
+$red: #eb4c34;
+$error: #de2626;
+
+$border-standard: #DAE3E8;
+$border-interaction: #BECCD4;
+$border-interaction-tint: #637375;
+$border-interaction-negative-default: #DE2626;
+$border-interaction-negative-focus: #FFBABA;
+$border-status-success: #BCEBCE;
+$border-status-notify: #FFE7A3;
+
+$link-hover: #C72F18;
+$link-secondary: #637173;
+$link-default: #EB4C34;
+
+$bg-active: #EB4C34;
+$bg-contrast: #272A2E;
+$bg-accent: #383D40;
+$bg-positive: #EDFAF2;
+$bg-notify: #FFF3DB;
+$bg-warning: #FFEBEB;
+$bg-secondary: #FAF7F5;
+$bg-notifications: #FAF8F7;
+$bg-warm: #F2EEE9;
+$bg-tint: #EBEDF0;
+
+$interaction-primary-default: #EB4C34;
+$interaction-disable: #EBEDF0;
+$interaction-tint-dark: #F5F7FA;
+
+$status-success: #00803C;
+$status-negative: #DE2626;
+$status-in-progress: #FAA500;
+$status-need-check: #C78500;
+$status-started: #5240AD;
+$status-inactive: #637173;
+
+
+$status-colors: (
+  'need-check': $status-need-check,
+  'started': $status-started,
+  'success': $status-success,
+  'inactive': $status-inactive,
+  'negative': $status-negative,
+);
+
+$tag-colors: (
+  'repair': (
+    'border': #FFDDA3,
+    'color': #CC6D00
+  ),
+  'work': (
+    'border': #BCEBD0,
+    'color': #008042
+  ),
+  'wait': (
+    'border': #BFCCD4,
+    'color': #667482
+  ),
+)

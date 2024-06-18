@@ -1,0 +1,240 @@
+.el-main {
+  max-width: 100vw;
+}
+
+// тултип
+.el-popper {
+  padding: 6px 11px !important;
+}
+
+// пагинация
+.el-pagination {
+  justify-content: center !important;
+  padding-top: 24px;
+
+  .el-pager li:not(.is-active) {
+    color: $text-primary !important;
+  }
+}
+
+// скрыть стрелку во всех дропдаунах
+.el-popper__arrow {
+  display: none;
+}
+
+.el-dropdown-menu__item {
+  gap: 8px;
+}
+
+.el-table th .cell {
+  line-height: 15px;
+}
+
+// свичер
+.switch {
+  .el-switch.is-checked .el-switch__core .el-switch__action {
+    color: $interaction-primary-default  !important;
+  }
+  
+  &.el-switch:not(.is-checked) .el-switch__core {
+    background-color: $white !important;
+
+    .el-switch__action {
+      background-color: $interaction-primary-default  !important;
+    }
+  }
+
+  &_big {
+    .el-switch__core {
+        min-width: 48px !important;
+        height: 28px !important;
+        border-radius: 28px !important;
+      }
+    
+    .el-switch__action {
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    &.el-switch.is-checked .el-switch__core .el-switch__action {
+      left: 24px !important;
+    }
+
+    &.el-switch:not(.is-checked) .el-switch__core {
+
+      .el-switch__action {
+        left: 4px;
+      }
+    }
+  }
+
+  &_small {
+    .el-switch__core {
+      min-width: 32px !important;
+      height: 20px !important;
+      border-radius: 10px !important;
+    }
+        
+    .el-switch__action {
+      width: 12px !important;
+      height: 12px !important;
+    }
+
+    &.el-switch.is-checked .el-switch__core .el-switch__action {
+      left: 14px !important;
+    }
+
+    &.el-switch:not(.is-checked) .el-switch__core {
+
+      .el-switch__action {
+        left: 4px;
+      }
+    }
+  }
+}
+
+// throw message
+
+.el-message {
+  padding: 14px !important;
+
+  .el-message__content {
+    color: $text-primary !important;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 50px !important;
+  }
+
+  .el-message__closeBtn {
+    color: $icon-primary  !important;
+  }
+
+  .el-message-icon--success {
+    color: $status-success !important;
+  }
+
+  .el-message-icon--warning {
+    color: $status-in-progress  !important;
+  }
+
+  .el-message-icon--error {
+    color: $status-negative  !important;
+  }
+
+  &.el-message--success {
+    border-color: $border-status-success !important;
+    background-color: $bg-positive !important;
+  }
+
+  &.el-message--warning {
+    border-color: $border-status-notify  !important;
+    background-color: $bg-notify  !important;
+  }
+
+  &.el-message--error {
+    border-color: $border-interaction-negative-focus  !important;
+    background-color: $bg-warning  !important;
+  }
+}
+
+// badge
+.badge-value {
+  .el-badge__content {
+    height: 14px !important;
+    line-height: 12px !important;
+    border: none;
+    padding: 0 4px !important;
+    background-color: $icon-primary  !important;
+    right: 8px;
+    top: 0;
+  }
+}
+
+.el-badge__content.is-dot {
+  right: 7px;
+  top: 3px;
+  background-color: $border-interaction-negative-default;
+}
+
+body {
+  .el-input-number.is-controls-right .el-input-number__increase, .el-input-number.is-controls-right .el-input-number__decrease {
+    --el-input-number-controls-height: 18px;
+  }
+}
+
+.el-select-tags-wrapper.has-prefix + .el-select__input {
+  margin-left: 8px !important;
+}
+
+// textarea, input
+.el-textarea__inner,
+.el-input__inner {
+  color: $text-primary !important;
+
+  &::placeholder {
+    color: $text-secondary  !important;
+    height: 100%;
+  }
+
+  &.is-disabled {
+    color: $text-inactive !important;
+  }
+}
+
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner {
+  color: $text-inactive !important;
+}
+ 
+.Vue-Toastification__toast--default.notification-item-wrapper {
+  background-color: $white;
+  color: $text-primary;
+  width: 390px;
+  padding: 16px 8px 16px 16px;
+}
+
+// date-picker
+.el-range-editor.is-disabled input {
+  color: $text-inactive  !important;
+}
+
+.el-date-range-picker .el-date-table__row .disabled {
+  &.start-date .el-date-table-cell__text,
+  &.end-date .el-date-table-cell__text {
+    color: $white;
+  }
+}
+
+@media (max-width: 768px) {
+  .el-date-range-picker {
+    width: fit-content !important;
+
+    .el-picker-panel__body {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      min-width: fit-content !important;
+
+      .el-picker-panel__content {
+        width: 240px;
+        padding: 0px;
+      }
+
+      .el-date-range-picker__content.is-left {
+        border-right: none;
+      }
+    }
+    
+    .el-picker-panel__sidebar+.el-picker-panel__body  {
+      margin-left: 96px;
+    }
+
+    .el-picker-panel__sidebar {
+      width: 86px;
+
+      .el-picker-panel__shortcut {
+        padding-left: 0;
+      }
+    }
+  }
+}

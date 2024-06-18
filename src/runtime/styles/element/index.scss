@@ -1,0 +1,28 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #eb4c34,
+    ),
+    'danger': (
+      'base': #de2626,
+
+    ),
+  ),
+  $menu: (
+    'text-color': #fff,
+    'bg-color': #272A2E,
+    'active-color': #eb4c34,
+    'hover-bg-color': #383D40,
+    
+    'item-height': 40px,
+    'level-padding': 8px,
+    'base-level-padding': 8px,
+    'icon-width': 40px,
+  ),
+  $main: (
+    'padding': 0,
+  ),
+  $border-radius: (
+    'base': 6px,
+  ),
+);
